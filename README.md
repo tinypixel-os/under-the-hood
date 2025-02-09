@@ -7,6 +7,7 @@ This project is an exploration of the internals of a programming language, cover
 - Compiler – Translating code into another form, like bytecode or machine code.
   
 ![flowchart](https://github.com/user-attachments/assets/3de27b2d-1910-4fd8-a51f-d82fca65469e)
+Image source: [http://www.cs.man.ac.uk/~pjj/farrell/comp3.html](http://www.cs.man.ac.uk/~pjj/farrell/comp3.html)
 
 ### Getting started
 
