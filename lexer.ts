@@ -4,18 +4,7 @@ import { getToken, isAlphabet, isInteger, isSingleCharacterToken, isSkippable } 
 // let x = 45;
 // [ LetToken, IdentifierToken, EqualsToken, NumberToken, SemicolonToken];
 
-function pushLastToken(currentToken: string, tokens: Token[]): void {
-    // If we have a current token, push it to the tokens array
-    if (RESERVED_KEYWORDS[currentToken]) {
-        tokens.push({
-            value: currentToken,
-            type: RESERVED_KEYWORDS[currentToken]
-        });
-    } else {
-        tokens.push(getToken(currentToken));
-    }
-}
-
+// Converts source code to array of tokens
 export function tokenize(sourceCode: string): Token[] {
     let tokens: Token[] = [];
     let currentToken = "";
@@ -37,9 +26,10 @@ export function tokenize(sourceCode: string): Token[] {
             tokens.push(getToken(char));
         } else if (isInteger(char) || isAlphabet(char)) {
             // Multi character token
-            // Eg: let, 45, name, <=, >=, ==, etc.
+            // Eg: let, 45, name, <=, >=, ==, etc.            
 
             // Append the character to the current token
+            // Eg: let = l => le => let
             currentToken += char;
         } else {
             console.log(`Unexpected character: ${char}`);
@@ -48,6 +38,19 @@ export function tokenize(sourceCode: string): Token[] {
 
     return tokens;
 }
+
+// Pushes the current token to the tokens array
+function pushLastToken(currentToken: string, tokens: Token[]): void {
+    if (RESERVED_KEYWORDS[currentToken]) {
+        tokens.push({
+            value: currentToken,
+            type: RESERVED_KEYWORDS[currentToken]
+        });
+    } else {
+        tokens.push(getToken(currentToken));
+    }
+}
+
 
 console.log(tokenize("let x = 45 + (2 * 3)"));
 /**
