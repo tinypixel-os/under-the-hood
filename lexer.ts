@@ -54,15 +54,15 @@ function pushLastToken(currentToken: string, tokens: Token[]): void {
 console.log(tokenize("let x = 45 + (2 * 3)"));
 /**
   [
-    { value: 'let', type: 0 },
-    { value: 'x', type: 1 },
-    { value: '=', type: 2 },
-    { value: '45', type: 3 },
-    { value: '+', type: 8 },
-    { value: '(', type: 6 },
-    { value: '2', type: 3 },
-    { value: '*', type: 10 },
-    { value: '3', type: 3 },
-    { value: ')', type: 7 }
+    { value: 'let', type: 11 },
+    { value: 'x', type: 0 },
+    { value: '=', type: 1 },
+    { value: '45', type: 2 },
+    { value: '+', type: 7 },
+    { value: '(', type: 5 },
+    { value: '2', type: 2 },
+    { value: '*', type: 9 },
+    { value: '3', type: 2 },
+    { value: ')', type: 6 }
   ]
 **/

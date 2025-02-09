@@ -1,5 +1,4 @@
 export enum TokenType {
-    LetToken, // let
     IdentifierToken, // x
     EqualsToken, // =
     NumberToken, // 45
@@ -14,6 +13,8 @@ export enum TokenType {
     MultiplyToken, // *
     DivideToken, // /
 
+    // Refer to RESERVED_KEYWORDS
+    LetToken, // let
     VarToken, // var
     ConstToken, // const
     IfToken, // if
