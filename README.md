@@ -6,7 +6,7 @@ This project is an exploration of the internals of a programming language, cover
 - Interpretor – Executing code directly from the AST.
 - Compiler – Translating code into another form, like bytecode or machine code.
 
-### Gettings started
+### Getting started
 
 Running the tokenizer
 ```
