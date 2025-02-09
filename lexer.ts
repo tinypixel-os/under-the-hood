@@ -8,6 +8,7 @@ export const TokenType {
     EqualsToken,
     NumberToken,
     SemicolonToken,
+    WhitespaceToken,
 
     OpenParenToken,
     CloseParenToken,
