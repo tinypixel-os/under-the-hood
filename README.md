@@ -22,5 +22,10 @@ cd under-the-hood
 npx tsx main.ts
 ```
 
+Screenshot
+
+<img width="354" alt="Screenshot 2025-02-15 at 5 58 25 PM" src="https://github.com/user-attachments/assets/75d41e60-c725-4b44-8759-7b50cfef850d" />
+
+
 ### Resources
 - https://astexplorer.net/
