@@ -17,7 +17,7 @@ function main() {
             }
 
             const ast = parser.produceAST(input);
-            console.log(JSON.stringify(ast, null, 2));
+            console.log('AST \n', JSON.stringify(ast, null, 2));
 
             promptUser(); // Ask again
         });

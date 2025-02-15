@@ -42,7 +42,7 @@ export function tokenize(sourceCode: string): Token[] {
     }
 
     tokens.push(getToken('EOF'))
-    console.log('Tokens', tokens);
+    console.log('Tokens \n', tokens);
     return tokens;
 }
 
