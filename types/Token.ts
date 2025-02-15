@@ -23,6 +23,7 @@ export enum TokenType {
     FunctionToken, // function
     ForToken, // for
     WhileToken, // while
+    EOF, // end of file
 }
 
 export interface Token {

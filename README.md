@@ -14,12 +14,13 @@ Image source: [http://www.cs.man.ac.uk/~pjj/farrell/comp3.html](http://www.cs.ma
 
 ### Getting started
 
-Running the tokenizer
+Running the lexer and parser.
 ```
 git clone https://github.com/tinypixel-os/under-the-hood.git
 cd under-the-hood
 
-npm install -g typescript
-tsx lexer.ts
-node lexer.js
+npx tsx main.ts
 ```
+
+### Resources
+- https://astexplorer.net/

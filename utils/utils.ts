@@ -30,6 +30,8 @@ export const getTokenType = (token: string): TokenType => {
         return TokenType.NumberToken;
     } else if (token === 'let') {
         return TokenType.LetToken;
+    } else if (token === 'EOF') {
+        return TokenType.EOF;
     } else {
         return TokenType.IdentifierToken;
     }

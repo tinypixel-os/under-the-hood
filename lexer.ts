@@ -36,6 +36,13 @@ export function tokenize(sourceCode: string): Token[] {
         }
     }
 
+    if (currentToken) {
+        pushLastToken(currentToken, tokens);
+        currentToken = "";
+    }
+
+    tokens.push(getToken('EOF'))
+    console.log('Tokens', tokens);
     return tokens;
 }
 
@@ -51,7 +58,7 @@ function pushLastToken(currentToken: string, tokens: Token[]): void {
     }
 }
 
-console.log(tokenize("let x = 45 + (2 * 3)"));
+// console.log(tokenize("let x = 45 + (2 * 3)"));
 /**
   [
     { value: 'let', type: 11 },
