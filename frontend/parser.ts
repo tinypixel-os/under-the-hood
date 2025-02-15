@@ -1,6 +1,6 @@
 import { Statement, Program, Expression, BinaryExpression, NumberLiteral, Identifier } from './abstract-syntax-tree';
 import { tokenize } from './lexer';
-import { Token, TokenType } from './types/Token';
+import { Token, TokenType } from '../types/Token';
 
 export default class Parser {
     private tokens: Token[] = [];

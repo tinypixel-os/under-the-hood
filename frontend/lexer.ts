@@ -1,5 +1,5 @@
-import { RESERVED_KEYWORDS, Token } from "./types/Token";
-import { getToken, isAlphabet, isInteger, isSingleCharacterToken, isSkippable } from "./utils/utils";
+import { RESERVED_KEYWORDS, Token } from "../types/Token";
+import { getToken, isAlphabet, isInteger, isSingleCharacterToken, isSkippable } from "../utils/utils";
 
 // let x = 45;
 // [ LetToken, IdentifierToken, EqualsToken, NumberToken, SemicolonToken];

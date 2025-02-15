@@ -1,5 +1,5 @@
 import readline from "readline";
-import Parser from "./parser.js"; // Ensure the correct import path
+import Parser from "./frontend/parser"; // Ensure the correct import path
 
 const rl = readline.createInterface({
     input: process.stdin,
